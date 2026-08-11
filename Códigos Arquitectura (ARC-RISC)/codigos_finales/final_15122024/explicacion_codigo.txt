@@ -1,0 +1,7 @@
+El programa calcula la suma de todos los elementos del arreglo arrayA. 
+Inicialmente carga en %r1 el valor almacenado en length (20), que representa el tamaño del arreglo en bytes. 
+Como cada elemento ocupa una palabra de 4 bytes, el arreglo contiene cinco elementos. 
+En cada iteración se verifica si %r1 es cero mediante andcc; si lo es, la instrucción be finaliza el ciclo. 
+En caso contrario, %r1 se decrementa en 4 para obtener el desplazamiento del siguiente elemento, recorriendo el arreglo desde el último elemento hasta el primero. 
+Cada valor leído se almacena temporalmente en %r5 y luego se acumula en %r3, que contiene la suma parcial. 
+Al finalizar el recorrido, %r3 contiene el resultado final de la suma, que es 48.

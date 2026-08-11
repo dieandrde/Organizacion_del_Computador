@@ -1,0 +1,4 @@
+El programa carga dos valores desde memoria (x e y) en registros, los guarda temporalmente en el stack
+utilizando el registro r14 como Stack Pointer y luego invoca una subrutina. 
+La subrutina recupera ambos valores desde el stack, los suma y deja el resultado nuevamente en el stack. 
+Al regresar al programa principal, este obtiene el resultado desde el stack y lo almacena en la variable z en memoria.

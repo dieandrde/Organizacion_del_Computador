@@ -1,0 +1,14 @@
+el programa hace uso de una macro para recorrer los valores de un array. R1 inicialmente toma el valor de "lenght",
+el cual es 20 ya que se trata de 5 elementos. (5elementos x 4bytes = 20 bytes), en cada iteracion se le resta 4. Entonces
+r1 se utiliza como desplazamiento respecto a la direccion base del arreglo
+
+va decreciendo y en cada iteracion se verifica si este llega al valor de 0 para terminar con el flujo del programa.
+los valores del array se van guardando en cada iteracion en r2, y luego en r3 se guarda la operación de add entre r2 y r3.
+Osea, r3 funciona como acumulador de la suma de todos los elementos del array.
+el recorrido finaliza cuando el desplazamiento (r1) llega a cero, luego de haber procesado todos los elementos del arreglo.
+es ahi cuando se guarda el valor final de r3 en la direccion de memoria de 'resultado'
+osea en 2092.
+por otro lado el programa define también un bloque de 5 palabras que parece no utilizar.
+
+EL PROGRAMA NO ESTÁ RECORRIENDO EL ARREGLO PORQUE RECONOZCA LA CANTIDAD DE ELEMENTOS QUE TIENE, SI NO PORQUE RECONOCE
+SU TAMAÑO DE BYTES.

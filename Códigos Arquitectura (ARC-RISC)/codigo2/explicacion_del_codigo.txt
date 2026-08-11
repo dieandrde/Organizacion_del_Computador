@@ -1,0 +1,5 @@
+El programa carga un entero desde memoria (valor), realiza un AND con 1 para inspeccionar el bit menos significativo y 
+determinar si el número es par o impar. 
+Si el resultado del AND es 0, el número es par y se guarda r2 = 1 y r3 = 0. 
+Si el resultado es distinto de 0, el número es impar y se guarda r2 = 0 y r3 = 1. 
+Como valor = 25, el número es impar, por lo que al finalizar r2 = 0 y r3 = 1.

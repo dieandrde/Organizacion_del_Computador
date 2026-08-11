@@ -1,0 +1,43 @@
+r14 no contiene el número que guardaste.
+
+Contiene la dirección donde vas a guardar cosas.
+
+r14 por convencion es el stack pointer. Apunta a una direccion de memoria
+
+la instruccion: 
+
+"st %r1, %r14"
+
+NO ES
+
+"copiar r1 dentro de r14"
+
+en realidad significa
+
+"guardar el contenido de r1 en la memoria cuya dirección está en r14."
+
+la dirección no es una etiqueta.
+
+la dirección está guardada en un registro.
+
+
+r14 solo cambia cuando alguna instrucción dice explícitamente que el destino es r14.
+
+Por ejemplo
+
+addcc %r14,-4,%r14
+
+
+
+Cuando hacemos
+
+addcc %r14,-4,%r14
+st %r1,%r14
+
+conceptualmente hacemos
+
+"push r1"
+
+No importa tanto que escribimos en la dirección -4.
+
+Lo importante es que agregamos un elemento arriba de la pila.

@@ -1,0 +1,8 @@
+--- Symbol Table ---
+vector: 2052
+valdos: 100
+valuno: 9800
+calcular_offset: 3028
+limite: 2048
+alpha: 2072
+val_max: 9900

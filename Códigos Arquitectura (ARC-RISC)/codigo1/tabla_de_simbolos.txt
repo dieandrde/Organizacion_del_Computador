@@ -1,0 +1,3 @@
+--- Symbol Table ---
+main: 0
+array: 12

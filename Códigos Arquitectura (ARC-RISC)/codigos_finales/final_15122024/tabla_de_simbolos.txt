@@ -1,0 +1,6 @@
+--- Symbol Table ---
+main: 2048
+done: 2080
+arrayA: 2088
+length: 2084
+for: 2056

@@ -1,0 +1,6 @@
+--- Symbol Table ---
+main: 0
+espar: 16
+valor: 40
+esimpar: 28
+fin: 44

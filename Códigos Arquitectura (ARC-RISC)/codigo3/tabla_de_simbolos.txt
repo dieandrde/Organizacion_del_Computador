@@ -1,0 +1,9 @@
+--- Symbol Table ---
+main: 16
+sumar: 40
+sumando2: 4
+resultado: 8
+sumando1: 0
+esimpar: 56
+paridad: 12
+fin: 64

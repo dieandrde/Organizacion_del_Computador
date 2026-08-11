@@ -1,0 +1,31 @@
+Por defecto el ensamblador asume que el código comienza en la
+dirección de memoria 0 si no se especifica una directa '.org'
+
+El Program Counter arranca entonces en 0
+en 0 --> está la instrucción 'nop'
+(No Operation), no se realiza ninguna acción, generalmente utilizada para
+rellenar ciclos reloj.
+
+en 4 --> 'addcc %r1, 4, %r1'
+Suma el valor actual de r1 (el 4) y lo guarda en r1
+a su vez hace un control de flags
+
+en 8 --> ld %r1, [array+8], %r7 
+guarda en el registro r7 el dato ubicado en la posicion de memoria
+r1 + [array+8]
+osea, array está en la posición 12, se le hace un desplazamiento de + 8
+= 20, a eso se le suma el valor de r1 (4), osea en el registro r7 se cargará
+el dato dentro de la posición 24 
+
+luego, array 25, 32, 3, 5, 9 son los datos definidos en memoria.
+Asumiendo enteros de 32 bits (4 bytes)
+
+array --> 25
+array + 4 --> 32
+array + 8 --> 3
+array + 12 --> 5
+array + 16 --> 9
+
+LAS ETIQUETAS SON PARA ASISTIR LAS APLICACIONES INTERMEDIAS
+PARA LLEGAR AL ESTADO DE "PROGRAMA DE EJECUCION".
+NO SON INSTRUCCIONES

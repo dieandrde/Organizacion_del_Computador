@@ -1,0 +1,7 @@
+--- Symbol Table ---
+main: 2096
+_sumar0: 2104
+_fin0: 2128
+length: 2048
+resultado: 2092
+array: 2052
